@@ -1,0 +1,33 @@
+swagger: '2.0'
+info:
+  title: Entra Protected MCP Server
+  version: '1.0'
+host: <hostname_placeholder_example_123456ngrokfreeapp>
+basePath: /
+schemes:
+  - https
+paths:
+  /mcp:
+    post:
+      summary: Entra Protected MCP Server
+      x-ms-agentic-protocol: mcp-streamable-1.0
+      operationId: InvokeMCP
+      parameters:
+        - name: Accept
+          in: header
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success
+securityDefinitions:
+  oauth2-auth:
+    type: oauth2
+    flow: accessCode
+    tokenUrl: https://login.windows.net/common/oauth2/authorize
+    scopes:
+      mcp:tools: mcp:tools
+    authorizationUrl: https://login.microsoftonline.com/common/oauth2/authorize
+security:
+  - oauth2-auth:
+      - mcp:tools

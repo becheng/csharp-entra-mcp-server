@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  devcontainer:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace:cached
+      - vscode-server-extensions:/home/vscode/.vscode-server/extensions
+      - vscode-server-insiders-extensions:/home/vscode/.vscode-server-insiders/extensions
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000;https://+:5001
+    command: sleep infinity
+    working_dir: /workspace
+    user: vscode
+
+volumes:
+  vscode-server-extensions:
+  vscode-server-insiders-extensions:

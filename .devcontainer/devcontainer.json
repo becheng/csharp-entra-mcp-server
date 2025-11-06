@@ -1,0 +1,42 @@
+{
+    "name": "C# MCP Server Development",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "features": {
+        // See https://containers.dev/features for list of features
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+        },
+        "ghcr.io/azure/azure-dev/azd:latest": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "ms-dotnettools.csdevkit",
+                "ms-azuretools.vscode-bicep"
+                // "GitHub.vscode-github-actions",
+                // "ms-azuretools.azure-dev",
+                // "ms-azuretools.vscode-azurefunctions",
+                // "ms-azuretools.vscode-bicep",
+                // "ms-azuretools.vscode-docker"
+                // Include other VSCode language extensions if needed
+                // Right click on an extension inside VSCode to add directly to devcontainer.json, or copy the extension ID
+            ]
+        }
+    },
+    "forwardPorts": [
+        5000,
+        5001,
+        8080
+        // Forward ports if needed for local development
+    ],
+    "postCreateCommand": "dotnet restore",
+    "remoteUser": "vscode",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+    "hostRequirements": {
+        "memory": "8gb"
+    }
+}

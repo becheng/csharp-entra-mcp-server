@@ -1,0 +1,22 @@
+swagger: '2.0'
+info:
+  title: Entra Protected MCP Server
+  version: '1.0'
+host: <hostname_placeholder>
+basePath: /
+schemes:
+  - https
+paths:
+  /mcp:
+    post:
+      summary: Entra Protected MCP Server
+      x-ms-agentic-protocol: mcp-streamable-1.0
+      operationId: InvokeMCP
+      parameters:
+        - name: Accept
+          in: header
+          required: false
+          type: string
+      responses:
+        '200':
+          description: Success

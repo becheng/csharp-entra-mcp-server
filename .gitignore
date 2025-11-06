@@ -1,0 +1,61 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# IDE settings
+.vscode/
+.idea/
+.codacy/
+.github/instructions/
+
+# Dotnet tooling
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+# Include symbols, vsix, etc. if generated locally
+*.snupkg
+*.nuspec
+.nuget/
+
+# Logs and diagnostics
+*.log
+*.svclog
+TestResult*/
+[Tt]est[Rr]esult*/
+[Bb]enchmarkDotNet.Artifacts/
+
+# Coverage
+*.coverage
+*.coveragexml
+*.opencover.xml
+
+# Build byproducts
+[Bb]uild[Ll]og.*
+*.cache
+*.dbmdl
+*.bak
+*.old
+
+# Entity Framework
+Migrations/
+
+# ASP.NET generated files
+wwwroot/lib/
+
+# Generated configuration
+appsettings.*.local.json
+
+# Local tooling
+.terraform/
+.azure
+.DS_Store

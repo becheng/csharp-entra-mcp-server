@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F404D65B-92FA-4649-BF8D-BB4D5CEE6D5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McpServer", "src\McpServer\McpServer.csproj", "{3FEEBEDD-7C13-42A6-8B90-999E15E25C89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsLibrary", "src\ToolsLibrary\ToolsLibrary.csproj", "{F1444B3A-296E-4556-88DD-E70DECCE0EAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FEEBEDD-7C13-42A6-8B90-999E15E25C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FEEBEDD-7C13-42A6-8B90-999E15E25C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FEEBEDD-7C13-42A6-8B90-999E15E25C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FEEBEDD-7C13-42A6-8B90-999E15E25C89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1444B3A-296E-4556-88DD-E70DECCE0EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1444B3A-296E-4556-88DD-E70DECCE0EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1444B3A-296E-4556-88DD-E70DECCE0EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1444B3A-296E-4556-88DD-E70DECCE0EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3FEEBEDD-7C13-42A6-8B90-999E15E25C89} = {F404D65B-92FA-4649-BF8D-BB4D5CEE6D5F}
+		{F1444B3A-296E-4556-88DD-E70DECCE0EAD} = {F404D65B-92FA-4649-BF8D-BB4D5CEE6D5F}
+	EndGlobalSection
+EndGlobal

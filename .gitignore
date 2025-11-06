@@ -59,3 +59,6 @@ appsettings.*.local.json
 .terraform/
 .azure
 .DS_Store
+
+# custom
+src/McpServer/appsettings.Development.json

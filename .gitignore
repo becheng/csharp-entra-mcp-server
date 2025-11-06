@@ -54,6 +54,7 @@ wwwroot/lib/
 
 # Generated configuration
 appsettings.*.local.json
+appsettings.Development.json
 
 # Local tooling
 .terraform/
